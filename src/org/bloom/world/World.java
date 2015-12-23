@@ -18,6 +18,7 @@ public interface World {
      * Spawns a entity in the world
      * @param entity the entitytype enum
      * @param pos the position
+     * @param world the world the entity is in
      */
     void spawnEntityInWorld(EntityType entity, Position pos, World world);
 
