@@ -19,7 +19,7 @@ public interface World {
      * @param entity the entitytype enum
      * @param pos the position
      */
-    void spawnEntityInWorld(EntityType entity, Position pos);
+    void spawnEntityInWorld(EntityType entity, Position pos, World world);
 
     /**
      * Creates a explosion at the specified position
