@@ -1,6 +1,7 @@
 package org.bloom.entity;
 
 import org.bloom.util.Position;
+import org.bloom.world.World;
 
 import java.util.UUID;
 
@@ -54,4 +55,10 @@ public interface Entity {
      * Removes the entity
      */
     void remove();
+
+    /**
+     * Get's the entity's world.
+     * @return the world
+     */
+    World getWorld();
 }
