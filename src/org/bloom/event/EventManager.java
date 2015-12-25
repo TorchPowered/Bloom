@@ -64,6 +64,20 @@ public class EventManager {
                         e.printStackTrace();
                     }
                 }
+                if(parameterClass == PlayerMoveEvent.class && event instanceof PlayerMoveEvent){
+                    try{
+                        method.invoke(method.getDeclaringClass().newInstance(), (PlayerMoveEvent) event);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+                if(parameterClass == PluginStopEvent.class && event instanceof PluginStopEvent){
+                    try{
+                        method.invoke(method.getDeclaringClass().newInstance(), (PluginStopEvent) event);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
             }
         }
     }
