@@ -39,4 +39,11 @@ public interface Server {
      * @param command the command
      */
     void registerCommand(Command command);
+
+    /**
+     * Kicks a player from the server
+     * @param player the player
+     * @param reason the reason
+     */
+    void kickPlayer(Player player, String reason);
 }

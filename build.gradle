@@ -1,7 +1,9 @@
 group 'net.torchpowered'
-version '1.0-SNAPSHOT'
+version '0.1-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'maven-publish'
+
 
 sourceSets.main.java.srcDirs = ["src"]
 
@@ -24,4 +26,21 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile 'org.apache.commons:commons-lang3:3.4'
     compile 'org.apache.logging.log4j:log4j-api:2.5'
+}
+publishing {
+    repositories {
+        maven {
+            url "https://mymavenrepo.com/repo/APAKYWvFb7aL2wPEjv1h/"
+            credentials {
+                username 'myMavenRepo'
+                password mavenUrlWrite
+            }
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
