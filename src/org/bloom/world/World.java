@@ -31,8 +31,7 @@ public interface World {
 
     /**
      * Strikes lightning at a specified position
-     * @param world the world that the lightning will be striked
      * @param position the position in the world
      */
-    void strikeLightning(World world, Position position);
+    void strikeLightning(Position position);
 }
