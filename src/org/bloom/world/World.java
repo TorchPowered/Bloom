@@ -28,4 +28,11 @@ public interface World {
      * @param isSmoking if the explosion creates smoke
      */
     void createExplosion(Position pos, float strength, boolean isSmoking);
+
+    /**
+     * Strikes lightning at a specified position
+     * @param world the world that the lightning will be striked
+     * @param position the position in the world
+     */
+    void strikeLightning(World world, Position position);
 }
