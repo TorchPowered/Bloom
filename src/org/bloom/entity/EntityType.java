@@ -16,4 +16,16 @@ public enum EntityType {
      * Represents a Zombie
      */
     ZOMBIE,
+    /**
+     * Represents a Rabbit
+     */
+    RABBIT,
+    /**
+     * Represents a Cow
+     */
+    COW,
+    /**
+     * Represents a Guardian
+     */
+    GUARDIAN,
 }
